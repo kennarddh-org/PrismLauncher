@@ -561,13 +561,16 @@ void AccountList::setListFilePath(QString path, bool autosave)
 
 bool AccountList::anyAccountIsValid()
 {
-    for (auto account : m_accounts) {
-        // if (account->ownsMinecraft()) {
-        return true;
-        // }
-    }
+    // for (auto account : m_accounts) {
+    //     if (account->ownsMinecraft()) {
+    //         return true;
+    //     }
+    // }
 
-    return false;
+    // return false;
+
+    // Allows creating offline account without having real account first.
+    return true;
 }
 
 void AccountList::fillQueue()
