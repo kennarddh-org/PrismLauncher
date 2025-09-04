@@ -567,7 +567,6 @@ bool AccountList::anyAccountIsValid()
     //     }
     // }
     // return false;
-
     return true;
 }
 
