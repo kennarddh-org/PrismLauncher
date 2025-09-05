@@ -169,6 +169,8 @@ QString LaunchController::askOfflineName(QString playerName, bool demo, bool& ok
 
 void LaunchController::login()
 {
+    wants_online = true;
+    
     decideAccount();
 
     if (!m_accountToUse) {
